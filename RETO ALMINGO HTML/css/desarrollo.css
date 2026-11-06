@@ -1,0 +1,106 @@
+/* Introducción */
+.intro {
+  position: relative;
+  padding: 90px 120px;
+  background-image: url("../imgs/oficina_2.png");
+  background-size: cover;
+  background-position: center;
+}
+
+/* capa oscura para poder leer el texto */
+.intro::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.intro-content {
+  position: relative;
+  max-width: 800px;
+}
+
+.intro h1 {
+  font-size: 56px;
+  line-height: 1.1;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  background-color: #e8323c;
+  padding: 0 12px;
+}
+
+.intro h2 {
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.intro p {
+  font-size: 17px;
+}
+
+/* Lista de tecnologías */
+.tecnologias {
+  padding: 70px 120px;
+  background-color: #000000;
+}
+
+.software {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  transition: transform 0.4s ease;
+}
+
+.software:last-child {
+  margin-bottom: 0;
+}
+
+.software:hover {
+  transform: scale(1.03);
+}
+
+/* círculo blanco con el icono del lenguaje centrado */
+.software-logo {
+  width: 165px;
+  height: 165px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 3px solid #eeeadf;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+
+/* tamaño del icono */
+.software-logo i {
+  font-size: 85px;
+  line-height: 1;
+}
+
+/* el cuadro de texto pasa un poco por detrás del círculo */
+.software-texto {
+  flex: 1;
+  margin-left: -40px;
+  padding: 25px 35px 25px 65px;
+  border: 1px solid #3a3a3a;
+  border-radius: 12px;
+  background-color: #111111;
+}
+
+.software-texto h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
