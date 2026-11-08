@@ -6,6 +6,7 @@
   <title>Almingo S.L. | Software and apps development</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/portada.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=stat_minus_1" />
 </head>
 <body>
   <header class="header">
@@ -13,8 +14,15 @@
       <img src="imgs/almingo_logo.png" alt="Almingo S.L. logo" class="logo">
     </a>
     <nav class="menu">
+      <!-- Menú desplegable Agency -->
+      <div class="dropdown">
+        <a href="#" class="dropdown-toggle">Agency <span class="material-symbols-outlined"> stat_minus_1</span></a>
+        <div class="dropdown-menu">
+          <a href="clientes.html">Clients</a>
+          <a href="plantilla.html">Staff</a>
+        </div>
+      </div>
       <a href="desarrollo.html">Development</a>
-      <a href="plantilla.html">Staff</a>
       <a href="#contact" class="contact-boton">Contact us</a>
     </nav>
   </header>
