@@ -110,6 +110,79 @@ a {
   font-size: 13px;
 }
 
+/* Contenedor del menú para alinear todo en fila */
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 25px; /* Ajusta el espacio entre enlaces según tu diseño */
+}
+
+/* Contenedor del desplegable */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.dropdown-toggle .arrow {
+  font-size: 0.9em;
+  line-height: 1;
+  transition: transform 0.2s ease;
+}
+
+/* Caja desplegable oculta por defecto */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #050507; /* Fondo negro/oscuro como en la imagen */
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  border-top: 2px solid #f03a47; /* Detalle rojo opcional arriba */
+}
+
+/* Mostrar el menú al pasar el ratón por encima */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Opcional: cambia el color de "Agency" a rojo al abrirse, como en la foto */
+.dropdown:hover .dropdown-toggle {
+  color: #f03a47; 
+}
+
+/* Enlaces dentro del desplegable */
+.dropdown-menu a {
+  color: #ffffff;
+  padding: 14px 20px;
+  text-decoration: none;
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08); /* Línea separadora sutil */
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.dropdown-menu a:last-child {
+  border-bottom: none;
+}
+
+/* Efecto hover en las opciones (color cian/azul claro como "CLIENTES" en la foto, o cámbialo a rojo) */
+.dropdown-menu a:hover {
+  color: #38bdf8; 
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
 .entrada
 {
     animation: aparecer 1s;

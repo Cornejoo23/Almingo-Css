@@ -1,0 +1,287 @@
+/* Variables y estilos base */
+:root {
+  --color-rojo: #f03a47;
+  --color-rojo-hover: #d32834;
+  --color-texto-oscuro: #333333;
+  --fuente-principal: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--fuente-principal);
+  line-height: 1.6;
+}
+
+/* Botón reutilizable */
+.btn-rojo {
+  display: inline-block;
+  background-color: var(--color-rojo);
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 12px 32px;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-rojo:hover {
+  background-color: var(--color-rojo-hover);
+}
+
+/* Barra lateral de redes */
+.social-sidebar {
+  position: fixed;
+  left: 0;
+  top: 55%;
+  transform: translateY(-50%);
+  background-color: var(--color-rojo);
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  border-radius: 0 4px 4px 0;
+}
+
+.social-sidebar a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+}
+
+.social-sidebar a:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+/* SECCIÓN 1: HERO */
+.hero-casos {
+  position: relative;
+  /* Asegúrate de poner aquí la ruta correcta de tu foto del escritorio */
+  background: url("../imgs/Fototrabajando-fondo.png") center/cover no-repeat;
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  padding: 80px 40px;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  /* Oscurece la foto de fondo sin taparla del todo */
+  background: rgba(15, 15, 18, 0.72); 
+}
+
+/* Contenedor interno para empujar el texto hacia la derecha */
+.hero-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1050px; /* Mismo ancho que tu sección de abajo */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Alinea los elementos (incluido el botón) a la derecha */
+  text-align: right;     /* Alinea las líneas de texto a la derecha */
+}
+
+.hero-content h1 {
+  font-size: clamp(2.8rem, 5.5vw, 4.5rem);
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 8px;
+}
+
+.hero-subtitle {
+  color: var(--color-rojo);
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 28px;
+}
+
+.hero-lead, .hero-text, .hero-closing {
+  max-width: 580px; /* Limita el ancho del párrafo para que no cruce toda la pantalla */
+}
+
+.hero-lead {
+  font-size: 0.95rem;
+  margin-bottom: 18px;
+}
+
+.hero-text {
+  font-size: 0.92rem;
+  color: #e0e0e0;
+  margin-bottom: 22px;
+}
+
+.hero-closing {
+  font-size: 0.95rem;
+  margin-bottom: 22px;
+}
+
+/* Ajuste ligero del botón para que sea más ancho como en la foto 2 */
+.hero-content .btn-rojo {
+  padding: 12px 45px;
+  border-radius: 2px;
+}
+
+/* SECCIÓN 2: SUPER CLIENTES */
+.super-clientes {
+  background-color: #ffffff;
+  padding: 80px 20px;
+  color: var(--color-texto-oscuro);
+}
+
+.container-clientes {
+  max-width: 1050px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.clientes-lista {
+  flex: 1.2;
+}
+
+.clientes-lista ul {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.clientes-lista li {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 22px;
+  font-size: 0.92rem;
+}
+
+.check-icon {
+  color: var(--color-rojo);
+  font-weight: bold;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+.clientes-imagen {
+  flex: 1;
+  text-align: center;
+}
+
+.clientes-imagen img {
+  max-width: 100%;
+  height: auto;
+  max-height: 360px;
+}
+
+/* SECCIÓN 3: GALERÍA DE HONOR */
+.galeria-honor {
+  background-color: #050507;
+  /* Resplandores rojo y azul sutiles en el fondo */
+  background-image: 
+    radial-gradient(circle at 5% 45%, rgba(210, 35, 45, 0.35) 0%, transparent 40%),
+    radial-gradient(circle at 75% 5%, rgba(25, 95, 160, 0.25) 0%, transparent 45%);
+  color: #ffffff;
+  padding: 90px 20px;
+  text-align: center;
+}
+
+.galeria-header {
+  max-width: 780px;
+  margin: 0 auto 50px;
+}
+
+.galeria-header h2 {
+  color: var(--color-rojo);
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.galeria-header p {
+  font-size: 0.92rem;
+  color: #dcdcdc;
+  margin-bottom: 20px;
+}
+
+.galeria-gracias {
+  font-weight: 500;
+  color: #ffffff;
+}
+
+/* Tarjeta blanca de logos */
+.logos-card {
+  background-color: #ffffff;
+  max-width: 960px;
+  margin: 0 auto;
+  border-radius: 28px;
+  padding: 50px 40px;
+}
+
+.logos-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 35px 25px;
+  align-items: center;
+  justify-items: center;
+}
+
+.logo-item img {
+  max-width: 100px;
+  max-height: 45px;
+  object-fit: contain;
+  filter: grayscale(20%);
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.logo-item img:hover {
+  transform: scale(1.08);
+  filter: grayscale(0%);
+}
+
+/* RESPONSIVE (Móviles y tablets) */
+@media (max-width: 900px) {
+  .container-clientes {
+    flex-direction: column;
+  }
+  .logos-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .logos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .logos-card {
+    padding: 30px 20px;
+  }
+}
+
+.entrada
+{
+    animation: aparecer 1s;
+}
+
+@keyframes aparecer{
+    from{
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
