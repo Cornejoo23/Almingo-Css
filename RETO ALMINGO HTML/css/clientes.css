@@ -1,0 +1,208 @@
+/* Botón rojo (se usa en varios sitios de la página) */
+.boton-rojo {
+  display: inline-block;
+  background-color: #e8323c;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 12px 32px;
+  border-radius: 3px;
+  transition: background-color 0.3s;
+}
+
+.boton-rojo:hover {
+  background-color: #b8232c;
+}
+
+/* Barra lateral de redes sociales */
+.redes-lateral {
+  position: fixed;
+  left: 0;
+  top: 450px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  background-color: #e8323c;
+  border-radius: 0 4px 4px 0;
+}
+
+.redes-lateral a {
+  padding: 12px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.redes-lateral a:hover {
+  background-color: #b8232c;
+}
+
+/* Portada (parte de arriba con foto de fondo) */
+.portada-casos {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  min-height: 650px;
+  padding: 100px 120px;
+  background-image: url("../imgs/Fototrabajando-fondo.png");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+}
+
+/* capa oscura para que se lea el texto */
+.capa-oscura {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.72);
+}
+
+.portada-contenido {
+  position: relative;
+  max-width: 600px;
+  text-align: right;
+}
+
+.portada-contenido h1 {
+  font-size: 64px;
+  line-height: 1.1;
+  margin-bottom: 10px;
+}
+
+.portada-subtitulo {
+  margin-bottom: 30px;
+  color: #e8323c;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.portada-intro {
+  margin-bottom: 18px;
+  font-size: 15px;
+}
+
+.portada-texto {
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: #dddddd;
+}
+
+.portada-cierre {
+  margin-bottom: 25px;
+  font-size: 15px;
+}
+
+/* Por qué valoramos a nuestros clientes (fondo blanco) */
+.super-clientes {
+  padding: 80px 120px;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.contenedor-clientes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.clientes-lista {
+  flex: 1;
+}
+
+.clientes-lista ul {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.clientes-lista li {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 22px;
+  font-size: 15px;
+}
+
+.icono-check {
+  color: #e8323c;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.clientes-imagen {
+  flex: 1;
+  text-align: center;
+}
+
+.clientes-imagen img {
+  max-width: 100%;
+  max-height: 360px;
+}
+
+/* Galería de clientes (fondo oscuro) */
+.galeria-honor {
+  padding: 90px 120px;
+  background-color: #0b0b0b;
+  color: #ffffff;
+  text-align: center;
+}
+
+.galeria-cabecera {
+  max-width: 780px;
+  margin: 0 auto 50px auto;
+}
+
+.galeria-cabecera h2 {
+  margin-bottom: 20px;
+  color: #e8323c;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.galeria-cabecera p {
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: #dddddd;
+}
+
+.galeria-gracias {
+  font-weight: bold;
+}
+
+/* Tarjeta blanca con los logos */
+.tarjeta-logos {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 50px 40px;
+  background-color: #ffffff;
+  border-radius: 25px;
+}
+
+.rejilla-logos {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 35px 25px;
+  align-items: center;
+  justify-items: center;
+}
+
+/* los logos son iconos de Devicon */
+.logo-cliente i {
+  display: block;
+  font-size: 52px;
+  line-height: 1;
+  color: #111111; /* para los iconos sin versión de color, como GitHub */
+  transition: transform 0.3s;
+}
+
+.logo-cliente i:hover {
+  transform: scale(1.12);
+}
