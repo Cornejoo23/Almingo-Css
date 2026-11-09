@@ -1,157 +1,97 @@
-/* Variables y estilos base */
-:root {
-  --color-rojo: #f03a47;
-  --color-rojo-hover: #d32834;
-  --color-texto-oscuro: #333333;
-  --fuente-principal: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: var(--fuente-principal);
-  line-height: 1.6;
-}
-
-/* Botón reutilizable */
-.btn-rojo {
+/* Botón rojo (se usa en varios sitios de la página) */
+.boton-rojo {
   display: inline-block;
-  background-color: var(--color-rojo);
+  background-color: #e8323c;
   color: #ffffff;
-  text-decoration: none;
-  font-size: 12px;
-  font-weight: 700;
+  font-size: 13px;
+  font-weight: bold;
   letter-spacing: 1px;
   padding: 12px 32px;
   border-radius: 3px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s;
 }
 
-.btn-rojo:hover {
-  background-color: var(--color-rojo-hover);
+.boton-rojo:hover {
+  background-color: #b8232c;
 }
 
-/* Barra lateral de redes */
-.social-sidebar {
-  position: fixed;
-  left: 0;
-  top: 55%;
-  transform: translateY(-50%);
-  background-color: var(--color-rojo);
-  display: flex;
-  flex-direction: column;
-  z-index: 100;
-  border-radius: 0 4px 4px 0;
-}
-
-.social-sidebar a {
-  color: #ffffff;
-  text-decoration: none;
-  padding: 12px;
-  font-weight: bold;
-  font-size: 14px;
-  text-align: center;
-}
-
-.social-sidebar a:hover {
-  background-color: rgba(0, 0, 0, 0.15);
-}
-
-/* SECCIÓN 1: HERO */
-.hero-casos {
+/* Portada (parte de arriba con foto de fondo) */
+.portada-casos {
   position: relative;
-  /* Asegúrate de poner aquí la ruta correcta de tu foto del escritorio */
-  background: url("../imgs/Fototrabajando-fondo.png") center/cover no-repeat;
-  min-height: 75vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+  min-height: 650px;
+  padding: 100px 120px;
+  background-image: url("../imgs/Fototrabajando-fondo.png");
+  background-size: cover;
+  background-position: center;
   color: #ffffff;
-  padding: 80px 40px;
 }
 
-.hero-overlay {
+/* capa oscura para que se lea el texto */
+.capa-oscura {
   position: absolute;
-  inset: 0;
-  /* Oscurece la foto de fondo sin taparla del todo */
-  background: rgba(15, 15, 18, 0.72); 
-}
-
-/* Contenedor interno para empujar el texto hacia la derecha */
-.hero-content {
-  position: relative;
-  z-index: 1;
+  top: 0;
+  left: 0;
   width: 100%;
-  max-width: 1050px; /* Mismo ancho que tu sección de abajo */
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end; /* Alinea los elementos (incluido el botón) a la derecha */
-  text-align: right;     /* Alinea las líneas de texto a la derecha */
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.72);
 }
 
-.hero-content h1 {
-  font-size: clamp(2.8rem, 5.5vw, 4.5rem);
-  font-weight: 700;
+.portada-contenido {
+  position: relative;
+  max-width: 600px;
+  text-align: right;
+}
+
+.portada-contenido h1 {
+  font-size: 64px;
   line-height: 1.1;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
-.hero-subtitle {
-  color: var(--color-rojo);
-  font-size: 1.35rem;
-  font-weight: 700;
+.portada-subtitulo {
+  margin-bottom: 30px;
+  color: #e8323c;
+  font-size: 22px;
+  font-weight: bold;
   letter-spacing: 1px;
-  margin-bottom: 28px;
 }
 
-.hero-lead, .hero-text, .hero-closing {
-  max-width: 580px; /* Limita el ancho del párrafo para que no cruce toda la pantalla */
-}
-
-.hero-lead {
-  font-size: 0.95rem;
+.portada-intro {
   margin-bottom: 18px;
+  font-size: 15px;
 }
 
-.hero-text {
-  font-size: 0.92rem;
-  color: #e0e0e0;
-  margin-bottom: 22px;
+.portada-texto {
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: #dddddd;
 }
 
-.hero-closing {
-  font-size: 0.95rem;
-  margin-bottom: 22px;
+.portada-cierre {
+  margin-bottom: 25px;
+  font-size: 15px;
 }
 
-/* Ajuste ligero del botón para que sea más ancho como en la foto 2 */
-.hero-content .btn-rojo {
-  padding: 12px 45px;
-  border-radius: 2px;
-}
-
-/* SECCIÓN 2: SUPER CLIENTES */
+/* Por qué valoramos a nuestros clientes (fondo blanco) */
 .super-clientes {
+  padding: 80px 120px;
   background-color: #ffffff;
-  padding: 80px 20px;
-  color: var(--color-texto-oscuro);
+  color: #333333;
 }
 
-.container-clientes {
-  max-width: 1050px;
-  margin: 0 auto;
+.contenedor-clientes {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 50px;
+  max-width: 1050px;
+  margin: 0 auto;
 }
 
 .clientes-lista {
-  flex: 1.2;
+  flex: 1;
 }
 
 .clientes-lista ul {
@@ -164,14 +104,13 @@ body {
   align-items: flex-start;
   gap: 15px;
   margin-bottom: 22px;
-  font-size: 0.92rem;
+  font-size: 15px;
 }
 
-.check-icon {
-  color: var(--color-rojo);
+.icono-check {
+  color: #e8323c;
+  font-size: 18px;
   font-weight: bold;
-  font-size: 1.1rem;
-  line-height: 1.4;
 }
 
 .clientes-imagen {
@@ -181,55 +120,49 @@ body {
 
 .clientes-imagen img {
   max-width: 100%;
-  height: auto;
   max-height: 360px;
 }
 
-/* SECCIÓN 3: GALERÍA DE HONOR */
+/* Galería de clientes (fondo oscuro) */
 .galeria-honor {
-  background-color: #050507;
-  /* Resplandores rojo y azul sutiles en el fondo */
-  background-image: 
-    radial-gradient(circle at 5% 45%, rgba(210, 35, 45, 0.35) 0%, transparent 40%),
-    radial-gradient(circle at 75% 5%, rgba(25, 95, 160, 0.25) 0%, transparent 45%);
+  padding: 90px 120px;
+  background-color: #0b0b0b;
   color: #ffffff;
-  padding: 90px 20px;
   text-align: center;
 }
 
-.galeria-header {
+.galeria-cabecera {
   max-width: 780px;
-  margin: 0 auto 50px;
+  margin: 0 auto 50px auto;
 }
 
-.galeria-header h2 {
-  color: var(--color-rojo);
-  font-size: 1.6rem;
+.galeria-cabecera h2 {
+  margin-bottom: 20px;
+  color: #e8323c;
+  font-size: 28px;
   letter-spacing: 1px;
-  margin-bottom: 20px;
 }
 
-.galeria-header p {
-  font-size: 0.92rem;
-  color: #dcdcdc;
+.galeria-cabecera p {
   margin-bottom: 20px;
+  font-size: 15px;
+  color: #dddddd;
 }
 
 .galeria-gracias {
-  font-weight: 500;
-  color: #ffffff;
+  font-weight: bold;
 }
 
-/* Tarjeta blanca de logos */
-.logos-card {
-  background-color: #ffffff;
+/* Tarjeta blanca con los logos */
+.tarjeta-logos {
   max-width: 960px;
   margin: 0 auto;
-  border-radius: 28px;
   padding: 50px 40px;
+  background-color: #ffffff;
+  border-radius: 25px;
 }
 
-.logos-grid {
+.rejilla-logos {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 35px 25px;
@@ -237,51 +170,15 @@ body {
   justify-items: center;
 }
 
-.logo-item img {
-  max-width: 100px;
-  max-height: 45px;
-  object-fit: contain;
-  filter: grayscale(20%);
-  transition: transform 0.2s ease, filter 0.2s ease;
+/* los logos son iconos de Devicon */
+.logo-cliente i {
+  display: block;
+  font-size: 52px;
+  line-height: 1;
+  color: #111111; /* para los iconos sin versión de color, como GitHub */
+  transition: transform 0.3s;
 }
 
-.logo-item img:hover {
-  transform: scale(1.08);
-  filter: grayscale(0%);
-}
-
-/* RESPONSIVE (Móviles y tablets) */
-@media (max-width: 900px) {
-  .container-clientes {
-    flex-direction: column;
-  }
-  .logos-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (max-width: 550px) {
-  .logos-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .logos-card {
-    padding: 30px 20px;
-  }
-}
-
-.entrada
-{
-    animation: aparecer 1s;
-}
-
-@keyframes aparecer{
-    from{
-        opacity: 0;
-        transform: translateY(25px);
-    }
-
-    to{
-        opacity: 1;
-        transform: translateY(0);
-    }
+.logo-cliente i:hover {
+  transform: scale(1.12);
 }
