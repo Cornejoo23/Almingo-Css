@@ -45,12 +45,14 @@
 
 .intro p {
   font-size: 17px;
+  text-align: justify;
 }
 
 /* Bloques de equipo (fundadores y trabajadores) */
 .equipo {
   padding: 70px 120px;
   background-color: #000000;
+  flex: 1;
 }
 
 .equipo-trabajadores {
@@ -108,6 +110,7 @@
   background-color: #111111;
   text-align: center;
   transition: border-color 0.3s;
+  flex: 1;
 }
 
 .persona:hover .datos {
