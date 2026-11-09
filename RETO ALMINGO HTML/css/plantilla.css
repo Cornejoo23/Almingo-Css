@@ -1,4 +1,4 @@
-/* Introducción */
+
 .intro {
   position: relative;
   padding: 90px 120px;
@@ -48,7 +48,6 @@
   text-align: justify;
 }
 
-/* Bloques de equipo (fundadores y trabajadores) */
 .equipo {
   padding: 70px 120px;
   background-color: #000000;

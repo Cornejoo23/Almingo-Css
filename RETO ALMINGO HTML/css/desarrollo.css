@@ -1,4 +1,4 @@
-/* Introducción */
+
 .intro {
   position: relative;
   padding: 90px 120px;
@@ -47,7 +47,7 @@
   text-align: justify;
 }
 
-/* Lista de tecnologías */
+/* lista de tecnologías */
 .tecnologias {
   padding: 70px 120px;
   background-color: #000000;

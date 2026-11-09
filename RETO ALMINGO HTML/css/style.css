@@ -75,7 +75,7 @@ a {
   color: #bbbbbb;
 }
 
-/* botón rojo de contacto (compartido por las tres páginas) */
+/* botón rojo de contacto (como en el resto de páginas) */
 .menu .contact-boton {
   background-color: #e8323c;
   padding: 12px 26px;
@@ -110,14 +110,14 @@ a {
   font-size: 13px;
 }
 
-/* Contenedor del menú para alinear todo en fila */
+/* contenedor del menú para alinear todo en fila */
 .menu {
   display: flex;
   align-items: center;
-  gap: 25px; /* Ajusta el espacio entre enlaces según tu diseño */
+  gap: 25px; 
 }
 
-/* Contenedor del desplegable */
+/* contenedor del desplegable */
 .dropdown {
   position: relative;
   display: inline-block;
@@ -136,30 +136,30 @@ a {
   transition: transform 0.2s ease;
 }
 
-/* Caja desplegable oculta por defecto */
+/* caja desplegable oculta por defecto */
 .dropdown-menu {
   display: none;
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #050507; /* Fondo negro/oscuro como en la imagen */
+  background-color: #050507; 
   min-width: 160px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
   z-index: 1000;
-  border-top: 2px solid #f03a47; /* Detalle rojo opcional arriba */
+  border-top: 2px solid #f03a47;
 }
 
-/* Mostrar el menú al pasar el ratón por encima */
+/* mostrar el menú al pasar el ratón por encima */
 .dropdown:hover .dropdown-menu {
   display: block;
 }
 
-/* Opcional: cambia el color de "Agency" a rojo al abrirse, como en la foto */
+/* cambia el color de "Agency" a rojo al abrirse */
 .dropdown:hover .dropdown-toggle {
   color: #f03a47; 
 }
 
-/* Enlaces dentro del desplegable */
+/* enlaces dentro del desplegable */
 .dropdown-menu a {
   color: #ffffff;
   padding: 14px 20px;
@@ -169,7 +169,7 @@ a {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08); /* Línea separadora sutil */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08); /* linea para separar */
   transition: color 0.2s ease, background-color 0.2s ease;
 }
 
@@ -177,19 +177,19 @@ a {
   border-bottom: none;
 }
 
-/* Estilo para la página activa en el desplegable */
+/* estilo para la página activa en el desplegable */
 .dropdown-menu a.active {
   color: #38bdf8;
   background-color: rgba(255, 255, 255, 0.05);
 }
 
-/* Efecto hover en las opciones (color cian/azul claro como "CLIENTES" en la foto, o cámbialo a rojo) */
+/* efecto hover en las opciones  */
 .dropdown-menu a:hover {
   color: #38bdf8; 
   background-color: rgba(255, 255, 255, 0.03);
 }
 
-/*Los simbolos de google fonts*/
+/*los iconos que usamos de google fonts*/
 .material-symbols-outlined {
   font-family: 'Material Symbols Outlined';
   font-weight: normal;
