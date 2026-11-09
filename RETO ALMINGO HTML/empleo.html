@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Careers | Almingo S.L.</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/empleo.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+  <header class="header">
+    <a href="almingo.html" class="logo-link">
+      <img src="imgs/almingo_logo.png" alt="Almingo S.L. logo" class="logo">
+    </a>
+    <nav class="menu">
+      <!-- Menú desplegable Agency -->
+      <div class="dropdown">
+        <a href="#" class="dropdown-toggle">Agency <span class="material-symbols-outlined"> stat_minus_1</span></a>
+        <div class="dropdown-menu">
+          <a href="clientes.html">Clients</a>
+          <a href="plantilla.html">Staff</a>
+          <a href="empleo.html" class="active">Empleo</a>
+        </div>
+      </div>
+      <a href="desarrollo.html">Development</a>
+      <a href="almingo.html#contact" class="contact-boton"> <span class="material-symbols-outlined"> mail </span> Contact us</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="entrada">
+
+      <!-- Sección de Vacantes -->
+      <section class="seccion-vacantes">
+        <h2>NUESTRAS VACANTES</h2>
+        
+        <div class="lista-vacantes">
+
+            <details class="item-vacante">
+                <summary class="cabecera-vacante">
+                    <span>Jefe de Proyecto Senior de Ecommerce</span>
+                    <span class="signo-mas">+</span>
+                </summary>
+                <div class="detalle-vacante">
+                <p>Buscamos a alguien con experiencia liderando proyectos de comercio electrónico de principio a fin, gestionando equipos multidisciplinares y manteniendo relación directa con el cliente.</p>
+                <ul>
+                    <li><strong>Modalidad:</strong> Híbrido / Remoto</li>
+                    <li><strong>Requisitos:</strong> +4 años de experiencia en gestión de proyectos digitales y plataformas ecommerce.</li>
+                </ul>
+                </div>
+            </details>
+
+            <details class="item-vacante">
+                <summary class="cabecera-vacante">
+                    <span>Desarrollador Senior de Shopify / Liquid / GraphQL</span>
+                    <span class="signo-mas">+</span>
+                </summary>
+                <div class="detalle-vacante">
+                <p>Te encargarás del desarrollo de temas a medida, integraciones con ERPs y optimización de rendimiento en tiendas Shopify Plus.</p>
+                <ul>
+                    <li><strong>Modalidad:</strong> Remoto</li>
+                    <li><strong>Requisitos:</strong> Dominio de Liquid, JavaScript, HTML/CSS y consumo de APIs con GraphQL.</li>
+                </ul>
+                </div>
+            </details>
+
+            <details class="item-vacante">
+                <summary class="cabecera-vacante">
+                    <span>Consultor de IA para Procedimientos</span>
+                    <span class="signo-mas">+</span>
+                </summary>
+                <div class="detalle-vacante">
+                <p>Analizarás flujos de trabajo internos de nuestros clientes para diseñar e implementar automatizaciones y soluciones basadas en Inteligencia Artificial.</p>
+                <ul>
+                    <li><strong>Modalidad:</strong> Híbrido</li>
+                    <li><strong>Requisitos:</strong> Experiencia integrando LLMs, herramientas de automatización y diseño de procesos.</li>
+                </ul>
+                </div>
+            </details>
+
+        </div>
+      </section>
+
+      <!-- Sección del Formulario / CV -->
+      <section class="seccion-cv">
+        <div class="cuadro-cv">
+          <h2>ENVÍANOS TU CV</h2>
+          
+          <form class="formulario-cv">
+            <div class="fila-inputs">
+              <div class="campo">
+                <label>Nombre*</label>
+                <input type="text" required>
+              </div>
+              <div class="campo">
+                <label>Apellidos*</label>
+                <input type="text" required>
+              </div>
+            </div>
+
+            <div class="fila-inputs">
+              <div class="campo">
+                <label>Teléfono*</label>
+                <input type="tel" required>
+              </div>
+              <div class="campo">
+                <label>Email*</label>
+                <input type="email" required>
+              </div>
+            </div>
+
+            <div class="fila-inputs">
+              <div class="campo">
+                <label>Lugar de residencia*</label>
+                <input type="text" required>
+              </div>
+              <div class="campo">
+                <label>Expectativas salariales*</label>
+                <input type="text" required>
+              </div>
+            </div>
+
+            <div class="fila-inputs">
+              <div class="campo">
+                <label>Nivel de inglés*</label>
+                <select>
+                  <option>A1 / A2</option>
+                  <option>B1 / B2</option>
+                  <option>C1 / C2</option>
+                </select>
+              </div>
+              <div class="campo">
+                <label>¿Cómo nos has conocido?*</label>
+                <select>
+                  <option>Bolsas de empleo</option>
+                  <option>Redes sociales</option>
+                  <option>Recomendación</option>
+                  <option>Otro</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="campo completo">
+              <label>Descripción de tu rol / tecnología principal:</label>
+              <textarea rows="4"></textarea>
+            </div>
+
+            <div class="campo completo">
+              <label>Sube tu CV en PDF</label>
+              <input type="file" accept=".pdf" class="input-archivo">
+            </div>
+
+            <p class="texto-legal">
+              En cumplimiento de lo dispuesto en el Reglamento General de Protección de Datos..., la información facilitada será tratada por ALMINGO S.L.U. con el fin de gestionar los currículums y procesos de selección...
+            </p>
+
+            <div class="campo-check">
+              <input type="checkbox" id="privacidad" required>
+              <label for="privacidad">He leído y acepto la Política de Privacidad.</label>
+            </div>
+
+            <div class="campo-check">
+              <input type="checkbox" id="entendido" required>
+              <label for="entendido">Declaro que he leído y he entendido toda la información.</label>
+            </div>
+
+            <button type="submit" class="boton-enviar">ENVIAR</button>
+          </form>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <a href="privacy-legal-cookies.html#privacy">Privacy Policy</a> -
+    <a href="privacy-legal-cookies.html#legal">Legal Notice</a> -
+    <a href="privacy-legal-cookies.html#cookies">Cookie Policy</a>
+    <p class="footerTexto">© 2026 All rights reserved. Almingo S.L</p>
+  </footer>
+
+</body>
+</html>
