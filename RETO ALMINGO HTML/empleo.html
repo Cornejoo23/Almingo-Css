@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Careers | Almingo S.L.</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/empleo.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+  <header class="header">
+    <a href="almingo.html" class="logo-link">
+      <img src="imgs/almingo_logo.png" alt="Almingo S.L. logo" class="logo">
+    </a>
+    <nav class="menu">
+      <!-- Menú desplegable Agency -->
+      <div class="dropdown">
+        <a href="#" class="dropdown-toggle">Agency <span class="material-symbols-outlined"> stat_minus_1</span></a>
+        <div class="dropdown-menu">
+          <a href="clientes.html">Clients</a>
+          <a href="plantilla.html">Staff</a>
+          <a href="empleo.html" class="active">Employment</a>
+        </div>
+      </div>
+      <a href="desarrollo.html">Development</a>
+      <a href="almingo.html#contact" class="contact-boton"> <span class="material-symbols-outlined"> mail </span> Contact us</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="entrada">
+
+      <!-- Sección de Vacantes -->
+      <section class="seccion-vacantes">
+        <h2>OUR OPEN POSITIONS</h2>
+        
+        <div class="lista-vacantes">
+
+            <details class="item-vacante">
+                <summary class="cabecera-vacante">
+                    <span>Senior Ecommerce Project Manager</span>
+                    <span class="signo-mas">+</span>
+                </summary>
+                <div class="detalle-vacante">
+                <p>We are looking for someone with experience leading ecommerce projects from start to finish, managing multidisciplinary teams and maintaining a direct relationship with the client.</p>
+                <ul>
+                    <li><strong>Work model:</strong> Hybrid / Remote</li>
+                    <li><strong>Requirements:</strong> 4+ years of experience in digital project management and ecommerce platforms.</li>
+                </ul>
+                </div>
+            </details>
+
+            <details class="item-vacante">
+                <summary class="cabecera-vacante"> 
+                    <span>Senior Java Developer</span>
+                    <span class="signo-mas">+</span>
+                </summary>
+                <div class="detalle-vacante">
+                <p>You will be responsible for developing custom themes, integrating with ERP systems and optimising performance in Shopify Plus stores.</p>
+                <ul>
+                    <li><strong>Work model:</strong> Remote</li>
+                    <li><strong>Requirements:</strong> Command of Liquid, JavaScript, HTML/CSS and API consumption with GraphQL.</li>
+                </ul>
+                </div>
+            </details>
+
+            <details class="item-vacante">
+                <summary class="cabecera-vacante">
+                    <span>AI Process Consultant</span>
+                    <span class="signo-mas">+</span>
+                </summary>
+                <div class="detalle-vacante">
+                <p>You will analyse our clients' internal workflows in order to design and implement automations and solutions based on Artificial Intelligence.</p>
+                <ul>
+                    <li><strong>Work model:</strong> Hybrid</li>
+                    <li><strong>Requirements:</strong> Experience integrating LLMs and automation tools, and designing processes.</li>
+                </ul>
+                </div>
+            </details>
+
+        </div>
+      </section>
+
+      <!-- Sección del Formulario / CV -->
+      <section class="seccion-cv">
+        <div class="cuadro-cv">
+          <h2>SEND US YOUR CV</h2>
+          
+          <form class="formulario-cv">
+            <div class="fila-inputs">
+              <div class="campo">
+                <label>First name*</label>
+                <input type="text" required>
+              </div>
+              <div class="campo">
+                <label>Last name*</label>
+                <input type="text" required>
+              </div>
+            </div>
+
+            <div class="fila-inputs">
+              <div class="campo">
+                <label>Phone*</label>
+                <input type="tel" required>
+              </div>
+              <div class="campo">
+                <label>Email*</label>
+                <input type="email" required>
+              </div>
+            </div>
+
+            <div class="fila-inputs">
+              <div class="campo">
+                <label>Place of residence*</label>
+                <input type="text" required>
+              </div>
+              <div class="campo">
+                <label>Salary expectations*</label>
+                <input type="text" required>
+              </div>
+            </div>
+
+            <div class="fila-inputs">
+              <div class="campo">
+                <label>English level*</label>
+                <select>
+                  <option>A1 / A2</option>
+                  <option>B1 / B2</option>
+                  <option>C1 / C2</option>
+                </select>
+              </div>
+              <div class="campo">
+                <label>How did you hear about us?*</label>
+                <select>
+                  <option>Job boards</option>
+                  <option>Social media</option>
+                  <option>Referral</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="campo completo">
+              <label>Description of your role / main technology:</label>
+              <textarea rows="4"></textarea>
+            </div>
+
+            <p class="texto-legal">
+              <p class="texto-legal">
+                In compliance with the General Data Protection Regulation (GDPR), we inform
+                you that the information provided will be processed by ALMINGO S.L. in order
+                to manage résumés and selection processes. You can exercise your rights of
+                access, rectification and deletion by writing to legal@almingo.com.
+              </p>
+
+            <div class="campo-check">
+              <input type="checkbox" id="privacidad" required>
+              <label for="privacidad">I have read and accept the Privacy Policy.</label>
+            </div>
+
+            <div class="campo-check">
+              <input type="checkbox" id="entendido" required>
+              <label for="entendido">I declare that I have read and understood all the information.</label>
+            </div>
+
+            <button type="submit" class="boton-enviar">SEND</button>
+          </form>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <a href="privacy-legal-cookies.html#privacy">Privacy Policy</a> -
+    <a href="privacy-legal-cookies.html#legal">Legal Notice</a> -
+    <a href="privacy-legal-cookies.html#cookies">Cookie Policy</a>
+    <p class="footerTexto">© 2026 All rights reserved. Almingo S.L</p>
+  </footer>
+
+</body>
+</html>
