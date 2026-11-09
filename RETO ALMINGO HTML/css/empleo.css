@@ -27,8 +27,6 @@ main
   flex-direction: column;
 }
 
-
-
 .item-vacante:first-child {
   border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
@@ -41,12 +39,6 @@ main
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
-  list-style: none; /* Oculta la flecha por defecto en Firefox/estándar */
-}
-
-/* Oculta la flecha por defecto en Chrome/Safari */
-.cabecera-vacante::-webkit-details-marker {
-  display: none;
 }
 
 .cabecera-vacante:hover {
@@ -60,7 +52,7 @@ main
   transition: transform 0.3s ease;
 }
 
-/* Rota el signo + cuando el desplegable está abierto */
+/* para rotar el signo + cuando el desplegable está abierto */
 .item-vacante[open] .signo-mas {
   transform: rotate(135deg);
   color: #e8323c;
@@ -90,7 +82,9 @@ main
 .detalle-vacante strong {
   color: #ffffff;
 }
-/* Permite animar alturas automáticas de forma fluida */
+
+
+/* animacion al desplegarse el contenido de vacante */
 .item-vacante {
   interpolate-size: allow-keywords;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
@@ -109,7 +103,7 @@ main
   opacity: 1;
 }
 
-/* Ajusta también la velocidad del giro del + para que vayan a la par */
+/* ajusta la velocidad del giro del + para que vayan a la par */
 .signo-mas {
   font-size: 22px;
   color: #ffffff;
@@ -121,7 +115,6 @@ main
   padding: 0 0 25px 0;
 }
 
-/* Sección del Cuadro y Formulario de CV */
 .seccion-cv 
 {
   max-width: 900px;
@@ -166,11 +159,6 @@ main
   gap: 8px;
 }
 
-.campo.completo 
-{
-  width: 100%;
-}
-
 .campo label 
 {
   color: #ffffff;
@@ -189,7 +177,6 @@ main
   outline: none;
   transition: border-color 0.3s;
 }
-
 .campo input:focus, .campo select:focus, .campo textarea:focus 
 {
   border-color: #e8323c;
