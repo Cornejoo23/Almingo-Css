@@ -177,12 +177,46 @@ a {
   border-bottom: none;
 }
 
+/* Estilo para la página activa en el desplegable */
+.dropdown-menu a.active {
+  color: #38bdf8;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
 /* Efecto hover en las opciones (color cian/azul claro como "CLIENTES" en la foto, o cámbialo a rojo) */
 .dropdown-menu a:hover {
   color: #38bdf8; 
   background-color: rgba(255, 255, 255, 0.03);
 }
 
+/*Los simbolos de google fonts*/
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+}
+
+.contact-boton {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dropdown-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/*Aparición animación*/
 .entrada
 {
     animation: aparecer 1s;
