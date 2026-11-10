@@ -1,4 +1,4 @@
-/* Título de la página, con foto de la oficina de fondo */
+/* título de la página, con foto de la oficina de fondo */
 .legal-cabecera {
   position: relative;
   padding: 90px 120px;
@@ -41,7 +41,7 @@
   padding: 0 12px;
 }
 
-/* Zona de los tres bloques, con el edificio de fondo */
+/* el edificio de fondo */
 .legal-contenido {
   position: relative;
   display: flex;

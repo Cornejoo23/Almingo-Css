@@ -75,7 +75,7 @@ a {
   color: #bbbbbb;
 }
 
-/* botón rojo de contacto (compartido por las tres páginas) */
+/* botón rojo de contacto (como en el resto de páginas) */
 .menu .contact-boton {
   background-color: #e8323c;
   padding: 12px 26px;
@@ -110,6 +110,113 @@ a {
   font-size: 13px;
 }
 
+/* contenedor del menú para alinear todo en fila */
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 25px; 
+}
+
+/* contenedor del desplegable */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.dropdown-toggle .arrow {
+  font-size: 0.9em;
+  line-height: 1;
+  transition: transform 0.2s ease;
+}
+
+/* caja desplegable oculta por defecto */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #050507; 
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  border-top: 2px solid #f03a47;
+}
+
+/* mostrar el menú al pasar el ratón por encima */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* cambia el color de "Agency" a rojo al abrirse */
+.dropdown:hover .dropdown-toggle {
+  color: #f03a47; 
+}
+
+/* enlaces dentro del desplegable */
+.dropdown-menu a {
+  color: #ffffff;
+  padding: 14px 20px;
+  text-decoration: none;
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08); /* linea para separar */
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.dropdown-menu a:last-child {
+  border-bottom: none;
+}
+
+/* estilo para la página activa en el desplegable */
+.dropdown-menu a.active {
+  color: #38bdf8;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* efecto hover en las opciones  */
+.dropdown-menu a:hover {
+  color: #38bdf8; 
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+/*los iconos que usamos de google fonts*/
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+}
+
+.contact-boton {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dropdown-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/*Aparición animación*/
 .entrada
 {
     animation: aparecer 1s;
