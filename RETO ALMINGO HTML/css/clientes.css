@@ -1,4 +1,4 @@
-/* Botón rojo (se usa en varios sitios de la página) */
+
 .boton-rojo {
   display: inline-block;
   background-color: #e8323c;
@@ -15,7 +15,6 @@
   background-color: #b8232c;
 }
 
-/* Portada (parte de arriba con foto de fondo) */
 .portada-casos {
   position: relative;
   display: flex;
@@ -74,7 +73,7 @@
   font-size: 15px;
 }
 
-/* Por qué valoramos a nuestros clientes (fondo blanco) */
+/* por qué valoramos a nuestros clientes (fondo blanco) */
 .super-clientes {
   padding: 80px 120px;
   background-color: #ffffff;
@@ -123,7 +122,7 @@
   max-height: 360px;
 }
 
-/* Galería de clientes (fondo oscuro) */
+/* galería de clientes (fondo oscuro) */
 .galeria-honor {
   padding: 90px 120px;
   background-color: #0b0b0b;
@@ -153,7 +152,7 @@
   font-weight: bold;
 }
 
-/* Tarjeta blanca con los logos */
+/* tarjeta blanca con los logos */
 .tarjeta-logos {
   max-width: 960px;
   margin: 0 auto;
@@ -175,7 +174,7 @@
   display: block;
   font-size: 52px;
   line-height: 1;
-  color: #111111; /* para los iconos sin versión de color, como GitHub */
+  color: #111111; /* para los iconos sin versión de color, como el de github */
   transition: transform 0.3s;
 }
 

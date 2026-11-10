@@ -60,13 +60,13 @@
   text-align: justify;
 }
 
-/* Patrocinadores */
+/* patrocinadores */
 .sponsors {
   padding: 50px 120px;
   background-color: #000000;
 }
 
-/* Logos de patrocinadores */
+/* logos de patrocinadores */
 .sponsors-row {
   display: flex;
   justify-content: space-around;
@@ -91,7 +91,7 @@
   object-fit: contain;
 }
 
-/*  Proyectos  */
+/*  proyectos  */
 .proyectos {
   padding: 70px 120px;
 }
@@ -129,7 +129,7 @@
   margin-bottom: 12px;
 }
 
-/* Opiniones */
+/* opiniones */
 .opiniones {
   padding: 70px 120px;
   background-color: #000000;
@@ -182,37 +182,37 @@
   min-height: 170px;
 }
 
-/* ---------- Contact form + gallery ---------- */
+
 .bottom {
   display: flex;
   min-height: 600px;
 }
 
-.contact-form {
+.contacto-formulario {
   width: 50%;
   padding: 60px 70px 60px 120px;
   background-color: #e8323c;
   color: #ffffff;
 }
 
-.contact-form h2 {
+.contacto-formulario h2 {
   font-size: 34px;
   margin-bottom: 8px;
 }
 
-.contact-form p {
+.contacto-formulario p {
   margin-bottom: 25px;
 }
 
-.contact-form label {
+.contacto-formulario label {
   display: block;
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 4px;
 }
 
-.contact-form input,
-.contact-form textarea {
+.contacto-formulario input,
+.contacto-formulario textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 16px;
@@ -223,16 +223,16 @@
   font-size: 15px;
 }
 
-.contact-form textarea {
+.contacto-formulario textarea {
   resize: none;
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
+.contacto-formulario input:focus,
+.contacto-formulario textarea:focus {
   outline: 3px solid #000000;
 }
 
-.contact-form button {
+.contacto-formulario button {
   padding: 12px 30px;
   background-color: #000000;
   color: #ffffff;
@@ -244,19 +244,19 @@
   transition: background-color 0.3s;
 }
 
-.contact-form button:hover {
+.contacto-formulario button:hover {
   background-color: #333333;
 }
 
-/* Gallery: three images, one on top of the other, fading in turn */
-.gallery {
+
+.galeria {
   position: relative;
   width: 50%;
   overflow: hidden;
   background-color: #000000;
 }
 
-.slide {
+.diapositiva {
   position: absolute;
   top: 0;
   left: 0;
@@ -268,15 +268,15 @@
 }
 
 /* transiciones de las imágenes */
-.slide-1 {
+.diapositiva-1 {
   animation-delay: 0s;
 }
 
-.slide-2 {
+.diapositiva-2 {
   animation-delay: 4s;
 }
 
-.slide-3 {
+.diapositiva-3 {
   animation-delay: 8s;
 }
 
